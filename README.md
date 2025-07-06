@@ -5,6 +5,7 @@ Takım AI EduTech
 🤖 Ürün ile İlgili Bilgiler
 
 👥 Takım Elemanları
+
 Berk Alparslan : Scrum Master / Product Owner / Developer
 
 Tuba Çalcı : Developer
