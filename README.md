@@ -72,9 +72,11 @@ Geri bildirimlerde ürünün yönü beğenildi, yeni fikirler ortaya çıktı.
 
 🔄 Sprint Retrospective
 Ekip iki gruba ayrıldı, her grubun hedefi farklı bir üretim odağına göre belirlendi:
+
 Grup 1 (Berk):
 Amaç: Yeni modüllerin ve seviye tasarımlarının oluşturulması.
 Platformun ikinci sprintinde yer alacak yeni test türleri, konu anlatım şablonları ve öğrenci arayüzlerinin geliştirilmesine odaklanacaktır.
+
 Grup 2 (Tuba):
 Amaç: Mevcut fonksiyonların iyileştirilmesi ve hata kontrolü.
 İlk sprintte geliştirilen modüllerin eksiklerinin tamamlanması, kullanıcı deneyimi açısından optimize edilmesi ve varsa bug’ların giderilmesi üzerine çalışacaktır.
