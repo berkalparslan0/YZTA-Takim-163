@@ -1,84 +1,93 @@
-
-📌 Ürün Tanıtımı
-
-SmartLearn, ilkokul ve ortaokul öğrencilerine yönelik, yapay zeka destekli bir çevrimiçi eğitim platformudur. Bu sistem, öğrencilere seviyelerine uygun konu anlatımı sunar, testler aracılığıyla performanslarını analiz eder ve eksik konularla ilgili özel önerilerde bulunur.
-
-Yapay zeka altyapısı sayesinde içerik önerisi, sınav analizi ve öğrenme haritası çıkarma gibi kişiselleştirilmiş yönlendirmeler sağlar. Kullanıcı dostu arayüzü ve interaktif test modülleriyle öğrencilerin motivasyonunu artırır.
-
-🎯 Uygulama Ana Fonksiyonları
-
-Modül	Açıklama
-Konu Anlatımı	Öğrenci seviyesine göre video, görsel ve metin içerikli konu anlatımı sunar.
-Akıllı Test Sistemi	Öğrencinin cevaplarına göre zorluk seviyesi ayarlanır; yanlış cevaplara anında açıklama sunulur.
-Yapay Zeka Öneri Motoru	Öğrencinin başarı geçmişine göre tekrar edilmesi gereken konuları önerir.
-Raporlama Paneli	Veliler ve öğretmenler için gelişim raporları ve eksik konu analizleri sağlar.
-
-🔧 Ürün Özellikleri
-Kapsamlı müfredat desteği (Matematik, Fen, Türkçe vb.)
-Öğrenme sürecini izleyen ve yönlendiren yapay zeka
-Gerçek zamanlı gelişim takibi
-Etkileşimli içerikler: oyunlaştırma, bulmaca, mini görevler
-Öğretmen, veli ve öğrenciye özel arayüzler
-
+🧬 Proje Açıklaması
+Modül Açıklama
+Kullanıcıdan alınan biyopsi ölçümleriyle, tümörün iyi huylu (Benign) mu yoksa kötü huylu (Malignant) mu olduğunu tahmin eder.
+Akıllı Tahmin Sistemi
+Naive Bayes algoritmasıyla çalışır. Kullanıcının girdiği değerlere göre sonucu anlık olarak tahmin eder.
+Yapay Zeka Destekli Geri Bildirim
+Tahmin sonrası sınıflandırma raporu, doğruluk oranı, ROC eğrisi gibi performans metrikleri sunar.
+Raporlama Paneli
+Model doğruluğu, confusion matrix, sınıflandırma skoru gibi görsel ve metinsel raporlar üretir.
+🔧 Uygulama Özellikleri
+Gaussian Naive Bayes algoritması (scikit-learn)
+Streamlit ile kullanıcı dostu web arayüzü
+Hasta verileri için manuel giriş paneli
+Gerçek zamanlı tahmin
+Görselleştirmeler: ROC eğrisi, Confusion Matrix
+Performans metrikleri: Doğruluk, Precision, Recall, F1-score
+Uyarı: Sonuçlar yalnızca öngörü amaçlıdır, tıbbi teşhis yerine geçmez
 👨‍🏫 Hedef Kitle
-İlkokul ve ortaokul öğrencileri
-Veliler
-Öğretmenler
-Eğitim kurumları
-Özel ders veren eğitmenler
-Eğitim teknolojisi girişimcileri
-
+Tıp öğrencileri
+Veri bilimi ve makine öğrenmesi öğrenen öğrenciler
+Sağlık alanında çalışan yapay zeka geliştiricileri
+Eğitim amaçlı demo projeler arayan akademisyenler
+Medikal yazılım girişimcileri
 🚀 Sprint 1 Süreci
+Sprint Planlaması – SmartDiagnosis Projesi
+Toplam Backlog Puanı: 120 Sprint 1 Hedefi: 40 puan Sprint 3 aşamada yürütülecek şekilde planlandı
+Görev Renk Kodları:
+🟧 Veri Analizi & Ön İşleme
+🟥 Model Geliştirme (Naive Bayes)
+🟩 Streamlit Arayüz Geliştirme
+🟦 Görselleştirme & Raporlama
+🟨 Dokümantasyon ve Uyarı Sistemleri
+Sprint 1'de Tamamlanan Görevler (Toplam 40 puan):
+Naive Bayes algoritması eğitildi (%80 eğitim, %20 test)
+Kullanıcı arayüzü geliştirildi (sol panel giriş – tahmin butonu)
+ROC eğrisi ve Confusion Matrix eklendi
+Uyarı metni ve sonuç açıklamaları hazırlandı
+💬 Daily Scrum
+Toplantılar WhatsApp üzerinden yürütüldü. 4 Kişilik takımımızdan 2 kişi projeyi ghostlamaya başladı.Mentörümüze ilettik.
+📌 Sprint Board
+Miro platformu kullanıldı Akış: Backlog → To-Do → In Progress → Done Sürekli güncellendi, ilerleme anlık olarak takip edildi
+🧪 Sprint Review
+Model 10 farklı hasta verisiyle test edildi Doğruluk oranı %95+ Uygulama arayüzü kullanıcılar tarafından anlaşılır bulundu
+🔄 Sprint Retrospective
+Grup 1 (Berk): Yeni algoritmaların entegrasyonu (ör. Random Forest karşılaştırması). Yeni veri kümeleri ile genişletme planlandı.
+Grup 2 (Tuba): Hata kontrolü ve kullanıcı deneyiminin artırılması. Form validasyonu, görsel tutarlılık ve uyarı sistemleri geliştirilecek
+📂 Veri Kümesi
+Dataset: Breast Cancer Wisconsin Diagnostic Dataset
+Özellikler: radius_mean, texture_mean, area_mean, compactness_mean, …
+Hedef değişken: diagnosis (M = Malignant, B = Benign)
+🔗 Uygulama Çalıştırma
+streamlit run app1.py
+⚠️ data.csv dosyasının app1.py ile aynı klasörde bulunması gerekir.
 
-✅ Sprint Planlaması – SmartLearn Projesi
-Toplam Backlog Puanı: 300
-Sprint 1 Hedefi: 100 puan
-Proje toplamda 3 sprint olarak planlandı ve her sprintte yaklaşık 100 puanlık görev yer alacak şekilde yapılandırıldı.
-Görevler işlevsel türlerine göre renklendirilerek yönetildi:
- Pembe: Yapay zeka algoritmalarının yazılım geliştirmesi (öneri motoru, test sistemi vs.)
- Mor: Testlerde sesli geri bildirim sistemlerinin eklenmesi
- Açık Yeşil: Konu anlatım modülündeki görsel animasyonlar ve efektler
- Koyu Yeşil: Genel platform görevleri (dokümantasyon, entegrasyon vb.)
- Mavi: Öğrenci, öğretmen ve veli panellerinin tasarımı
-Sprint görevleri, her rolün dengeli bir şekilde katkı sağlayabileceği şekilde dağıtıldı.
-Sprint sonlarında ekip üyelerinin mental olarak dinlenebilmesi ve yeni sprintlere daha verimli başlaması amacıyla zaman blokları bilinçli olarak boş bırakıldı.
+
+
+🚀 Sprint 2 Süreci – SmartDiagnosis Projesi
+✅ Sprint Planlaması
+Toplam Backlog Puanı: 120 Sprint 2 Hedefi: 40 puan Tahmin Mantığı: Geliştirilen temel sistem üzerine yeni özelliklerin entegrasyonu planlandı. Görev puanları önceki sprintteki gerçek tamamlama sürelerine göre yeniden dengelendi.
+🗂️ Sprint Notları
+Yeni veri giriş doğrulama sistemi planlandı
+Karar ağacı (Decision Tree) ile Naive Bayes modelinin karşılaştırılması hedeflendi
+Kullanıcı arayüzünde hasta geçmişi görüntüleme modülü eklenecek
+🟦 Tamamlanacak Görev Renk Kodları
+🟥: Yeni algoritma entegrasyonu (Decision Tree)
+🟩: Arayüzde geçmiş teşhisleri listeleme
+🟨: Gelişmiş raporlama ekranları
+🟦: Model karşılaştırma grafikleri
+🟧: Girdi doğrulama sistemleri (hatalı değer engelleme)
 
 💬 Daily Scrum
-Toplantılar WhatsApp üzerinden yürütüldü.
-Tüm günlük notlar, Whatsapp ile arşivlendi.
+2 günde bir Zoom toplantıları gerçekleştirildi.
 
+📌 Sprint Board Updates
+Miro üzerinden yürütüldü: Backlog → To Do → In Progress → Done Sprint 2 boyunca toplam 5 görev başarıyla tamamlandı.
 
-📌 Sprint Board – SmartLearn Projesi
-Sprint görev yönetimi için Miro platformu kullanıldı.
-Board yapısı aşağıdaki akış mantığına göre oluşturuldu:
-Backlog → To-Do → In Progress → Done
-Sprint 1 kapsamında yürütülen görevlerin durumu bu yapıda sürekli güncellendi.
-Sprint sonunda 7 görev başarıyla tamamlandı.
-Tamamlanan görevler arasında:
-Yapay zekâ öneri sisteminin temel algoritması
-Konu anlatım modülünün ilk prototipi
-Öğrenci arayüzü için temel tasarım
-Test sistemi için sesli geri bildirim entegresi
-Görsel efektler ve anlatım içeriği taslağı
-Gelişim takibi için raporlama tablosu
-Kullanıcı rolleri (öğrenci/veli/öğretmen) için temel yapı
-Toplam puan durumu:
-✅ Sprint 1’de tamamlanan: 100 puan
-🎯 Genel proje puanı: 300 puan
+📸 Screenshot
+Tamamlanan modüllerden ekran görüntüleri alındı ve dokümantasyona eklendi (örn. hasta geçmişi tablosu, karşılaştırmalı grafik ekranı).
 
 🧪 Sprint Review
-Tüm ekip tamamlanan görevleri test etti.
-Geri bildirimlerde ürünün yönü beğenildi, yeni fikirler ortaya çıktı.
+Decision Tree modeli %94 doğrulukla çalıştı, Naive Bayes'e yakın sonuçlar verdi
+Kullanıcılar geçmiş sonuçlara ulaşabildi
+Hatalı veri girişi engellendi, kullanıcı memnuniyeti arttı
 
 🔄 Sprint Retrospective
-Ekip iki gruba ayrıldı, her grubun hedefi farklı bir üretim odağına göre belirlendi:
-
 Grup 1 (Berk):
-Amaç: Yeni modüllerin ve seviye tasarımlarının oluşturulması.
-Platformun ikinci sprintinde yer alacak yeni test türleri, konu anlatım şablonları ve öğrenci arayüzlerinin geliştirilmesine odaklanacaktır.
-
+Amaç: Yeni algoritmaların kıyaslanması ve kullanıcı arayüzüne yönelik yeniliklerin planlanması
+Feedback sonrası grafiksel rapor modülü planlandı
 Grup 2 (Tuba):
-Amaç: Mevcut fonksiyonların iyileştirilmesi ve hata kontrolü.
-İlk sprintte geliştirilen modüllerin eksiklerinin tamamlanması, kullanıcı deneyimi açısından optimize edilmesi ve varsa bug’ların giderilmesi üzerine çalışacaktır.
-Toplantıların belirli zaman aralıklarında yapılmasına karar verildi.
-Gelecek bölümlerde ihtiyaç duyulabilecek asset’lerin üretimi için listeler önceden hazırlandı.
+Amaç: Test kapsamının genişletilmesi ve hata izleme modülü eklenmesi
+Kullanıcı deneyimini ölçen basit bir memnuniyet formu geliştirildi
+
+
